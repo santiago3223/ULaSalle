@@ -399,8 +399,8 @@ int main()
     G.Add_Arista(7,6,1);
     G.Add_Arista(7,8,7);
 
-    //G.Dikjstra(0);
-    G.Kruskal().print();
+    G.Dikjstra(0);
+    //G.Kruskal();
 
     //G.Prim().print();
     //G.profundidad();
