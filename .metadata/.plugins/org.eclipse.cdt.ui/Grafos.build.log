@@ -1,6 +1,6 @@
-13:51:53 **** Incremental Build of configuration Debug for project Grafos ****
+11:06:02 **** Incremental Build of configuration Debug for project Grafos ****
 make all 
 make: No se hace nada para 'all'.
 
-13:51:53 Build Finished (took 80ms)
+11:06:02 Build Finished (took 79ms)
 

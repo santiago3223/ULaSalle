@@ -1,6 +1,35 @@
-13:51:51 **** Incremental Build of configuration Debug for project Grafos ****
+11:05:58 **** Incremental Build of configuration Debug for project Grafos ****
 make all 
-make: No se hace nada para 'all'.
-13:51:53 **** Incremental Build of configuration Debug for project Grafos ****
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:391:28: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     G.printDot("normal.dot");
+                            ^
+../main.cpp:392:36: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     G.Kruskal().printDot("kusk.dot");
+                                    ^
+../main.cpp:393:33: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     G.Prim().printDot("prim.dot");
+                                 ^
+../main.cpp: En la instanciación de ‘Grafo<V, E> Grafo<V, E>::Kruskal() [with V = int; E = int]’:
+../main.cpp:392:15:   se requiere desde aquí
+../main.cpp:275:14: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+   while(cant < m_grafito.size() -1 && !minHeap.empty() ){
+              ^
+../main.cpp: En la instanciación de ‘Grafo<V, E> Grafo<V, E>::Prim() [with V = int; E = int]’:
+../main.cpp:393:12:   se requiere desde aquí
+../main.cpp:297:21: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+          while(cant < m_grafito.size() ){
+                     ^
+Finished building: ../main.cpp
+ 
+Building target: Grafos
+Invoking: GCC C++ Linker
+g++  -o "Grafos"  ./main.o   
+Finished building target: Grafos
+ 
+11:06:02 **** Incremental Build of configuration Debug for project Grafos ****
 make all 
 make: No se hace nada para 'all'.
