@@ -358,7 +358,7 @@ public:
         }
 };
 
-int main()
+int main()tia
 {
     Grafo<int,int>  G;
 

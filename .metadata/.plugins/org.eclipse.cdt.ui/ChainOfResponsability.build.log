@@ -1,0 +1,15 @@
+20:43:37 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
+make all 
+Building file: ../Main1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main1.d" -MT"Main1.o" -o "Main1.o" "../Main1.cpp"
+Finished building: ../Main1.cpp
+ 
+Building target: ChainOfResponsability
+Invoking: GCC C++ Linker
+g++  -o "ChainOfResponsability"  ./Main1.o   
+Finished building target: ChainOfResponsability
+ 
+
+20:43:37 Build Finished (took 316ms)
+
