@@ -180,7 +180,7 @@ int main()
 //    cout << '\n';
 //  }
 	Banco banco;
-	banco.solicitarPrestamo(150000);
+	banco.solicitarPrestamo(1000);
 
 }
 

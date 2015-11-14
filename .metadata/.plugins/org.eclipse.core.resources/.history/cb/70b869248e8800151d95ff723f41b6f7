@@ -126,7 +126,7 @@ class Lider : public IAprobador{
 
 class Gerente : public IAprobador{
 	public:
-	void solicitarPrestamo(int monto){
+	vIAprobadoroid solicitarPrestamo(int monto){
 		if (monto > 50000 && monto <= 100000){
 			cout<<"Manejado por el Gerente"<<endl;
 
@@ -180,7 +180,7 @@ int main()
 //    cout << '\n';
 //  }
 	Banco banco;
-	banco.solicitarPrestamo(150000);
+	banco.solicitarPrestamo(1000);
 
 }
 

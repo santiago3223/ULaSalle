@@ -1,21 +1,4 @@
-20:38:12 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
-make all 
-Building file: ../Main1.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main1.d" -MT"Main1.o" -o "Main1.o" "../Main1.cpp"
-../Main1.cpp: En la función miembro ‘virtual void Banco::solicitarPrestamo(int)’:
-../Main1.cpp:155:40: error: no se puede convertir ‘Lider*’ a ‘EjecutivoDeCuenta*’ en la inicialización
-   EjecutivoDeCuenta* lider = new Lider();
-                                        ^
-../Main1.cpp:158:44: error: no se puede convertir ‘Gerente*’ a ‘EjecutivoDeCuenta*’ en la inicialización
-   EjecutivoDeCuenta* gerente = new Gerente();
-                                            ^
-../Main1.cpp:161:46: error: no se puede convertir ‘Director*’ a ‘EjecutivoDeCuenta*’ en la inicialización
-   EjecutivoDeCuenta* director = new Director();
-                                              ^
-subdir.mk:18: fallo en las instrucciones para el objetivo 'Main1.o'
-make: *** [Main1.o] Error 1
-20:43:13 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
+11:06:21 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
 make all 
 Building file: ../Main1.cpp
 Invoking: GCC C++ Compiler
@@ -27,7 +10,10 @@ Invoking: GCC C++ Linker
 g++  -o "ChainOfResponsability"  ./Main1.o   
 Finished building target: ChainOfResponsability
  
-20:43:26 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
+11:06:25 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
+make all 
+make: No se hace nada para 'all'.
+11:06:45 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
 make all 
 Building file: ../Main1.cpp
 Invoking: GCC C++ Compiler
@@ -39,7 +25,7 @@ Invoking: GCC C++ Linker
 g++  -o "ChainOfResponsability"  ./Main1.o   
 Finished building target: ChainOfResponsability
  
-20:43:37 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
+11:06:55 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
 make all 
 Building file: ../Main1.cpp
 Invoking: GCC C++ Compiler

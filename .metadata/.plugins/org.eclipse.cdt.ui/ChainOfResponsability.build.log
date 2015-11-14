@@ -1,4 +1,4 @@
-20:43:37 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
+11:06:55 **** Incremental Build of configuration Debug for project ChainOfResponsability ****
 make all 
 Building file: ../Main1.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++  -o "ChainOfResponsability"  ./Main1.o
 Finished building target: ChainOfResponsability
  
 
-20:43:37 Build Finished (took 316ms)
+11:06:56 Build Finished (took 319ms)
 
