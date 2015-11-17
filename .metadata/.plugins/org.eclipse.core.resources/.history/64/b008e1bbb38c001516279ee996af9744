@@ -1,0 +1,74 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16 de nov. de 2015
+ *      Author: santiago
+ */
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
+
+using namespace std;
+
+class Pagina{
+	public:
+		Pagina** paginas;
+		int sizeAlfabeto;
+		char[] * obj;
+	Pagina(){
+
+	}
+	Pagina(int size){
+		this->sizeAlfabeto = size;
+		*obj = 0;
+		paginas = new Pagina*[size];
+		for(int i = 0; i< size; i++){
+			paginas[i] = 0;
+		}
+	}
+
+
+};
+
+class Digital
+{
+	public:
+	Pagina* raiz;
+	int size;
+	Digital(int size){
+		this->size = size;
+		raiz = 0;
+	}
+
+	void Add(char[] dato){
+		if(!raiz){
+			raiz = new Pagina(size);
+		}
+		Pagina * q = raiz;
+		for(int i = 0; i < strlen(dato);i++){
+			Pagina * p = new Pagina(size);
+			q[(int)dato[0]-(int)'a'] = p;
+			q = p;
+		}
+
+	}
+
+	void Find(char[] dato){
+
+	}
+
+};
+
+
+
+int main()
+{
+	Digital dig(26);
+	dig.Add("perro");
+	//Pagina<int> Pagina(10);
+	cout<<"abb"<<endl;
+	cout<< (int)'z'<<endl;
+
+
+ return 0;
+}

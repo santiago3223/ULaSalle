@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Estructura de datos/NodoDigital.h&apos;" deleteContents="false" description="Delete resource &apos;Estructura de datos/NodoDigital.h&apos;" element1="/Estructura de datos/NodoDigital.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1447693244474"/>
+</session>

@@ -1,6 +1,13 @@
-12:27:18 **** Incremental Build of configuration Debug for project Grafos ****
+17:40:01 **** Incremental Build of configuration Debug for project Grafos ****
 make all 
-make: No se hace nada para 'all'.
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:361:11: error: expected initializer before ‘tia’
+ int main()tia
+           ^
+subdir.mk:18: fallo en las instrucciones para el objetivo 'main.o'
+make: *** [main.o] Error 1
 
-12:27:18 Build Finished (took 88ms)
+17:40:01 Build Finished (took 286ms)
 

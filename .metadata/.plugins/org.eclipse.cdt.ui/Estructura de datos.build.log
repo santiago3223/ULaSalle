@@ -1,0 +1,39 @@
+19:24:11 **** Incremental Build of configuration Debug for project Estructura de datos ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función miembro ‘void Digital::Add(char*)’:
+../main.cpp:79:11: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+   for(; i < strlen(dato);i++){
+           ^
+../main.cpp:83:9: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+    if(i == strlen(dato)-1){
+         ^
+../main.cpp: En la función miembro ‘bool Digital::Find(char*, Pagina*&, int&)’:
+../main.cpp:96:11: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+   for(; i < strlen(dato);i++){
+           ^
+../main.cpp: En la función ‘int main()’:
+../main.cpp:136:17: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+  dig.Add("perro");
+                 ^
+../main.cpp:137:17: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+  dig.Add("pollo");
+                 ^
+../main.cpp:138:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+  dig.Add("pez");
+               ^
+../main.cpp:139:28: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+  dig.printDot("archivo.dot");
+                            ^
+Finished building: ../main.cpp
+ 
+Building target: Estructura de datos
+Invoking: GCC C++ Linker
+g++  -o "Estructura de datos"  ./main.o   
+Finished building target: Estructura de datos
+ 
+
+19:24:11 Build Finished (took 372ms)
+
