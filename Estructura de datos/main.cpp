@@ -12,6 +12,147 @@
 
 using namespace std;
 
+class NodoPatricia{
+	public:
+		string p_dato;
+		bool finPalabra;
+		NodoPatricia* p_son[3];
+		NodoPatricia(){
+			finPalabra = false;
+			p_son[0] = p_son[1] = p_son[2] = 0;
+		}
+		NodoPatricia(string dato){
+			p_dato = dato;
+			finPalabra = false;
+			p_son[0] = p_son[1] = p_son[2] = 0;
+		}
+		void printDot(ofstream& os)
+		{
+			if(p_son[0]){
+				os<<p_dato<<"->"<<p_son[0]->p_dato<<endl;
+				p_son[0]->printDot(os);
+			}
+			if(p_son[1]){
+					os<<p_dato<<"->"<<p_son[1]->p_dato<<endl;
+					p_son[1]->printDot(os);
+				}
+			if(p_son[2]){
+					os<<p_dato<<"->"<<p_son[2]->p_dato<<endl;
+					p_son[2]->printDot(os);
+				}
+		}
+};
+
+class Patricia{
+	public:
+		NodoPatricia * raiz;
+		Patricia(){
+			raiz = 0;
+		}
+		void Add(string dato){
+			NodoPatricia* q = raiz;
+			int cant = 0;
+			bool mod;
+			if(Find(dato,q,mod, cant)){
+				return;
+			}
+			if(!q){
+				raiz = new NodoPatricia(dato);
+				return;
+			}
+
+
+			if(mod){
+				string datoAnterior = q->p_dato.substr(cant,(q->p_dato.size()) -cant);
+				q->p_dato = q->p_dato.substr(0,cant );
+				q->p_son[1] = new NodoPatricia(datoAnterior);
+
+				if(q->p_son[1]->p_dato[0] > dato[0]){
+					q->p_son[1]->p_son[0] = new NodoPatricia(dato);
+				}else{
+					q->p_son[1]->p_son[2] = new NodoPatricia(dato);
+				}
+			}else{
+				if(q->p_dato[0] > dato[0]){
+					q->p_son[0] = new NodoPatricia(dato);
+				}else{
+					q->p_son[2] = new NodoPatricia(dato);
+				}
+			}
+		}
+
+		bool Find(string dato){
+				NodoPatricia * p;
+				bool mod = 0;
+				int i = 0;
+				return Find(dato, p, mod, i);
+			}
+
+		bool Find(string &dato, NodoPatricia *& q, bool &mod, int & i){
+			if(!raiz){
+				return false;
+			}
+			q = raiz;
+			while(dato.size()>0){
+				i = 0;
+				mod = 0;
+				while( q->p_dato[i] && q->p_dato[i] == dato[i]){
+					i++;
+					mod = 1;
+				}
+				dato = dato.substr(i, dato.size()- i);
+				if(mod && q->p_son[1]){
+					q = q->p_son[1];
+				} else if(!mod && q->p_son[0] && q->p_dato[0] > dato[0]){
+					q = q->p_son[0];
+				}else if(!mod && q->p_son[2] && q->p_dato[0] < dato[0]){
+					q = q->p_son[2];
+				}else {
+					if(dato.size()>0){
+					return false;
+					}
+				}
+			}
+			return true;
+
+		}
+		bool Find(string dato, NodoPatricia * & q, int & cant, int & cant2, bool & mod){
+			if(!raiz){
+				return false;
+			}
+			q = raiz;
+			cant = 0;
+			while(cant< dato.size()){
+				mod = 0;
+				cant2 = 0;
+				while(q->p_dato[cant2] == dato[cant]){
+					cant++;
+					cant2++;
+					mod = 1;
+				}
+				if(mod && q->p_son[1]){
+					q = q->p_son[1];
+				} else if(q->p_son[0] && q->p_dato[0] > dato[cant]){
+					q = q->p_son[0];
+				}else if(q->p_son[2] && q->p_dato[0] < dato[cant]){
+					q = q->p_son[2];
+				}else {
+					return false;
+				}
+			}
+			return true;
+		}
+
+		void printDot(char* p)
+			{
+				ofstream file(p);
+				file<<"digraph {"<<endl;
+				raiz->printDot(file);
+				file<<" }"<<endl;
+			}
+
+
+};
 class Pagina{
 	public:
 		Pagina** paginas;
@@ -44,7 +185,7 @@ class Pagina{
 				os<<"|0";
 			}
 		}
-
+		NodoPatricia * p;
 		os<<"} } \"];"<<endl;
 
 		for(int i = 0 ; i<sizeAlfabeto; i++){
@@ -108,20 +249,6 @@ class Digital
 	{
 		ofstream file(p);
 		file<<"digraph {"<<endl;
-//		file<<"\""<<raiz <<"\""<<"[shape=record, label=\"{{ ";
-//		if(raiz->paginas[0]){
-//			file<<(char)((int)'a');
-//			}else{
-//				file<<"0";
-//			}
-//		for(int i = 1; i<size; i++){
-//			if(raiz->paginas[i]){
-//			file<<"|"<<(char)(i+(int)'a');
-//			}else{
-//				file<<"|0";
-//			}
-//		}
-//		file<<"} } \"];"<<endl;
 		raiz->printDot(file);
 		file<<" }"<<endl;
 	}
@@ -137,6 +264,15 @@ int main()
 	dig.Add("pollo");
 	dig.Add("pez");
 	dig.printDot("archivo.dot");
+
+	//Patricia pat;
+	//pat.Add("amanecer");
+	//pat.Add("amigo");
+	//pat.Add("amiga");
+	//pat.Add("amparo");
+	//cout<<pat.Find("amigoso")<<endl;
+
+	//pat.printDot("archivo.dot");
 	system("dot -Tpng archivo.dot -o archivo.png");
 	//Pagina<int> Pagina(10);
 	cout<<"aaa"<<endl;
