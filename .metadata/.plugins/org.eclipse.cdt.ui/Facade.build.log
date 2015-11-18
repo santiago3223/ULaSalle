@@ -1,6 +1,6 @@
-19:40:46 **** Incremental Build of configuration Debug for project Facade ****
+09:48:13 **** Incremental Build of configuration Debug for project Facade ****
 make all 
 make: No se hace nada para 'all'.
 
-19:40:46 Build Finished (took 69ms)
+09:48:13 Build Finished (took 67ms)
 

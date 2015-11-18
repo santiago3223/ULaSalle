@@ -2,13 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="find" key="selection"/>
+		<item value="t" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="t"/>
+			<item value="n = "/>
+			<item value="search"/>
 			<item value="Find"/>
+			<item value="char dato[]"/>
 			<item value="cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;"/>
 			<item value="_engineer"/>
 			<item value="checkOnStatus"/>
@@ -20,7 +24,7 @@
 		<item value="319" key="DIALOG_WIDTH"/>
 		<item value="1|Cantarell|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="420" key="DIALOG_HEIGHT"/>
-		<item value="721" key="DIALOG_X_ORIGIN"/>
-		<item value="91" key="DIALOG_Y_ORIGIN"/>
+		<item value="724" key="DIALOG_X_ORIGIN"/>
+		<item value="110" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

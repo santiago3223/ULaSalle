@@ -1,0 +1,27 @@
+16:57:32 **** Incremental Build of configuration Debug for project BTree ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función miembro ‘void BTree::insert(int)’:
+../main.cpp:116:18: aviso: variable ‘nn’ sin usar [-Wunused-variable]
+      BTreeNode * nn = root->search(k, q);
+                  ^
+../main.cpp: En la función miembro ‘void BTreeNode::insertNonFull(int)’:
+../main.cpp:157:21: aviso: variable ‘nn’ sin usar [-Wunused-variable]
+         BTreeNode * nn = search(k, q);
+                     ^
+../main.cpp: En la función ‘int main()’:
+../main.cpp:228:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
+ 
+Building target: BTree
+Invoking: GCC C++ Linker
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
+ 
+
+16:57:32 Build Finished (took 473ms)
+
