@@ -270,7 +270,6 @@ int main()
     t.insert(50);
     t.insert(51);
     t.insert(52);
-    t.insert(53);
 
 
 

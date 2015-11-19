@@ -268,9 +268,8 @@ int main()
     t.insert(48);
     t.insert(49);
     t.insert(50);
-    t.insert(51);
-    t.insert(52);
-    t.insert(53);
+    //t.insert(51);
+    //t.insert(52);
 
 
 

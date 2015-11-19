@@ -175,7 +175,7 @@ void BTreeNode::insertNonFull(int k)
 
         BTreeNode * q = 0;
         BTreeNode * nn = search(k, q);
-        if (C[i+1]->n == t && ! C[i+1]->hayEspacio(k))
+        if (C[i+1]->n == t )
         {
             splitChild(i+1, C[i+1]);
 
@@ -269,8 +269,7 @@ int main()
     t.insert(49);
     t.insert(50);
     t.insert(51);
-    t.insert(52);
-    t.insert(53);
+    t.insert(52)
 
 
 

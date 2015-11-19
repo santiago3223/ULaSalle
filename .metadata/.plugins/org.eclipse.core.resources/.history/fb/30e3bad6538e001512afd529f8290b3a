@@ -112,13 +112,14 @@ bool BTreeNode::hayEspacio(int k){
 	    if (keys[i] == k)
 	        return false;
 
-	    if (n<t)
-	    	return true;
-
 	    if (leaf == true)
-	        return n < t;
+	        return n <= t;
 
-	    return C[i]->hayEspacio(k);
+	    if( C[i]->hayEspacio(k)){
+	    	return n<=t;
+	    }else{
+	    	return false;
+	    }
 
 }
 
@@ -132,8 +133,8 @@ void BTree::insert(int k)
     }
     else
     {
-    	BTreeNode * q = 0;
-    	BTreeNode * nn = root->search(k, q);
+    	//BTreeNode * q = 0;
+    	//BTreeNode * nn = root->search(k, q);
         if (root->n ==t && !root->hayEspacio(k))
         {
             BTreeNode *s = new BTreeNode(t, false);
@@ -175,7 +176,7 @@ void BTreeNode::insertNonFull(int k)
 
         BTreeNode * q = 0;
         BTreeNode * nn = search(k, q);
-        if (C[i+1]->n == t && ! C[i+1]->hayEspacio(k))
+        if (C[i+1]->n == t && q->n == t)
         {
             splitChild(i+1, C[i+1]);
 
@@ -265,12 +266,6 @@ int main()
     t.insert(45);
     t.insert(46);
     t.insert(47);
-    t.insert(48);
-    t.insert(49);
-    t.insert(50);
-    t.insert(51);
-    t.insert(52);
-    t.insert(53);
 
 
 
