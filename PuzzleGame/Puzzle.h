@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <string.h>
+#include <stdlib.h>
 #include <vector>
 
 using namespace std;
@@ -36,6 +37,7 @@ private:
 	int * datos;
 	vector<int*> pasos;
 	void CrearPuzzleAleatorio(int size);
+	void MezclarPuzzle();
 	int Similitud(int * dat);
 
 };

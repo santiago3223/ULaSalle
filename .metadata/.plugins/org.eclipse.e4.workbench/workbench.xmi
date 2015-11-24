@@ -73,7 +73,6 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_vyZ3pZIBEeW3KJlUlG8xrw" selectedElement="_vyZ3q5IBEeW3KJlUlG8xrw" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_vyZ3ppIBEeW3KJlUlG8xrw" elementId="topLeft" visible="false" containerData="2382" selectedElement="_vyZ3p5IBEeW3KJlUlG8xrw">
               <tags>Minimized</tags>
-              <tags>MinimizedByZoom</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3p5IBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_vyaewZIBEeW3KJlUlG8xrw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3qJIBEeW3KJlUlG8xrw" elementId="org.eclipse.cdt.ui.CView" toBeRendered="false" ref="_vyafAJIBEeW3KJlUlG8xrw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3qZIBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_vyafAZIBEeW3KJlUlG8xrw"/>
@@ -81,9 +80,7 @@
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_vyZ3q5IBEeW3KJlUlG8xrw" containerData="7618" selectedElement="_vyZ3rJIBEeW3KJlUlG8xrw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_vyZ3rJIBEeW3KJlUlG8xrw" containerData="7196" selectedElement="_vyZ3rZIBEeW3KJlUlG8xrw" horizontal="true">
-                <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3rZIBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_vyZ41pIBEeW3KJlUlG8xrw">
-                  <tags>Maximized</tags>
-                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3rZIBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_vyZ41pIBEeW3KJlUlG8xrw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_vyZ3rpIBEeW3KJlUlG8xrw" elementId="topRight" visible="false" containerData="2500" selectedElement="_vyZ3r5IBEeW3KJlUlG8xrw">
                   <tags>Minimized</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3r5IBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.views.ContentOutline" ref="_vyafP5IBEeW3KJlUlG8xrw"/>
@@ -93,7 +90,6 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_vyZ3spIBEeW3KJlUlG8xrw" elementId="bottom" visible="false" containerData="2804" selectedElement="_vyZ3tZIBEeW3KJlUlG8xrw">
                 <tags>Minimized</tags>
-                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3s5IBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.views.ProblemView" ref="_vyafA5IBEeW3KJlUlG8xrw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3tJIBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.views.TaskList" ref="_vyafE5IBEeW3KJlUlG8xrw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_vyZ3tZIBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.console.ConsoleView" ref="_vyafI5IBEeW3KJlUlG8xrw"/>
@@ -217,19 +213,13 @@
         <tags>active</tags>
         <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_7pH2EJJFEeWU7NtiGMOs0A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.cpp" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; partName=&quot;main.cpp&quot; title=&quot;main.cpp&quot; tooltip=&quot;PuzzleGame/main.cpp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/PuzzleGame/main.cpp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;136&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_-IhQsJJFEeWU7NtiGMOs0A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.cpp" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; partName=&quot;main.cpp&quot; title=&quot;main.cpp&quot; tooltip=&quot;Estructura de datos/main.cpp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Estructura de datos/main.cpp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;3&quot; selectionOffset=&quot;6875&quot; selectionTopPixel=&quot;4650&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.cpp&quot; partName=&quot;main.cpp&quot; title=&quot;main.cpp&quot; tooltip=&quot;PuzzleGame/main.cpp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/PuzzleGame/main.cpp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;116&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_rkYxsJJGEeWU7NtiGMOs0A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Puzzle.cpp" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Puzzle.cpp&quot; partName=&quot;Puzzle.cpp&quot; title=&quot;Puzzle.cpp&quot; tooltip=&quot;PuzzleGame/Puzzle.cpp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/PuzzleGame/Puzzle.cpp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2148&quot; selectionTopPixel=&quot;984&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Puzzle.cpp&quot; partName=&quot;Puzzle.cpp&quot; title=&quot;Puzzle.cpp&quot; tooltip=&quot;PuzzleGame/Puzzle.cpp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/PuzzleGame/Puzzle.cpp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1164&quot; selectionTopPixel=&quot;706&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
@@ -237,7 +227,7 @@
           <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_rnFgYJJGEeWU7NtiGMOs0A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Puzzle.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Puzzle.h&quot; partName=&quot;Puzzle.h&quot; title=&quot;Puzzle.h&quot; tooltip=&quot;PuzzleGame/Puzzle.h&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/PuzzleGame/Puzzle.h&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;159&quot; selectionTopPixel=&quot;70&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Puzzle.h&quot; partName=&quot;Puzzle.h&quot; title=&quot;Puzzle.h&quot; tooltip=&quot;PuzzleGame/Puzzle.h&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/PuzzleGame/Puzzle.h&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;179&quot; selectionTopPixel=&quot;70&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
@@ -435,7 +425,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vyafYJIBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_x8XxAJJSEeWNCpkS4US0uA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_vydkIZIBEeW3KJlUlG8xrw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_b-fO4JLKEeWx78d8HkCsNQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_vydkIZIBEeW3KJlUlG8xrw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vyafcpIBEeW3KJlUlG8xrw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -459,7 +449,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vyafwpIBEeW3KJlUlG8xrw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_x8cpgJJSEeWNCpkS4US0uA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_vydjj5IBEeW3KJlUlG8xrw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_b-lVgJLKEeWx78d8HkCsNQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_vydjj5IBEeW3KJlUlG8xrw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vyafzpIBEeW3KJlUlG8xrw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

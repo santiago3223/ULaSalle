@@ -1,4 +1,4 @@
-21:54:24 **** Incremental Build of configuration Debug for project PuzzleGame ****
+12:33:25 **** Incremental Build of configuration Debug for project PuzzleGame ****
 make all 
 Building file: ../Puzzle.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++  -o "PuzzleGame"  ./Puzzle.o ./main.o
 Finished building target: PuzzleGame
  
 
-21:54:24 Build Finished (took 366ms)
+12:33:25 Build Finished (took 517ms)
 

@@ -312,3 +312,524 @@ Invoking: GCC C++ Linker
 g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
 Finished building target: PuzzleGame
  
+11:43:38 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+11:54:06 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:54:28 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:54:57 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+11:57:38 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:57:55 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:58:18 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:58:45 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:59:03 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:59:07 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+11:59:30 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+11:59:55 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:00:35 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:01:33 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+12:04:07 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:04:36 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:08:13 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+../Puzzle.cpp: En la función miembro ‘void Puzzle::ResolverPuzzle()’:
+../Puzzle.cpp:112:33: error: tipos inválidos ‘int[int]’ para índice de matriz
+    p2[posActual] = 2[posActual-1];
+                                 ^
+../Puzzle.cpp:150:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
+   case size - 1:
+        ^
+../Puzzle.cpp:158:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
+   case size:
+        ^
+subdir.mk:21: fallo en las instrucciones para el objetivo 'Puzzle.o'
+make: *** [Puzzle.o] Error 1
+12:08:26 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+../Puzzle.cpp: En la función miembro ‘void Puzzle::ResolverPuzzle()’:
+../Puzzle.cpp:150:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
+   case size - 1:
+        ^
+../Puzzle.cpp:158:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
+   case size:
+        ^
+make: *** [Puzzle.o] Error 1
+subdir.mk:21: fallo en las instrucciones para el objetivo 'Puzzle.o'
+12:08:41 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:08:58 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+12:09:13 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:09:50 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:10:12 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:10:50 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:11:19 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:11:34 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:13:35 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:13:50 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:14:23 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:15:43 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+12:16:10 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+12:17:05 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:18:29 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:19:38 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:20:15 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:20:30 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+make: No se hace nada para 'all'.
+12:22:27 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:23:03 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:24:27 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:24:57 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:26:22 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:27:25 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:29:05 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:29:28 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:32:05 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:32:22 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:32:36 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
+12:33:25 **** Incremental Build of configuration Debug for project PuzzleGame ****
+make all 
+Building file: ../Puzzle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
+Finished building: ../Puzzle.cpp
+ 
+Building target: PuzzleGame
+Invoking: GCC C++ Linker
+g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
+Finished building target: PuzzleGame
+ 
