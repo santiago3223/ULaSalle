@@ -1,4 +1,4 @@
-19:56:45 **** Incremental Build of configuration Debug for project BTree ****
+12:17:04 **** Incremental Build of configuration Debug for project BTree ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
@@ -12,7 +12,7 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "mai
          BTreeNode * nn = search(k, q);
                      ^
 ../main.cpp: En la función ‘int main()’:
-../main.cpp:277:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+../main.cpp:225:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
      t.printDot("archivo.dot");
                              ^
 Finished building: ../main.cpp
@@ -23,5 +23,5 @@ g++  -o "BTree"  ./main.o
 Finished building target: BTree
  
 
-19:56:45 Build Finished (took 334ms)
+12:17:05 Build Finished (took 496ms)
 

@@ -1,6 +1,83 @@
-21:11:30 **** Incremental Build of configuration Debug for project Estructura de datos ****
+12:03:13 **** Incremental Build of configuration Debug for project Estructura de datos ****
 make all 
-make: No se hace nada para 'all'.
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función miembro ‘std::vector<std::basic_string<char> > Patricia::Find(std::string)’:
+../main.cpp:105:21: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+    for(int i = 0 ; i< v.size(); i++){
+                     ^
+../main.cpp: En la función miembro ‘std::vector<std::basic_string<char> > Patricia::List(NodoPatricia*)’:
+../main.cpp:119:21: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+     for(int e = 0; e<va1.size(); e++){
+                     ^
+../main.cpp:125:22: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+      for(int e = 0; e<va1.size(); e++){
+                      ^
+../main.cpp:130:22: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+      for(int e = 0; e<va1.size(); e++){
+                      ^
+../main.cpp:137:22: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+      for(int e = 0; e<va1.size(); e++){
+                      ^
+../main.cpp:142:22: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+      for(int e = 0; e<va1.size(); e++){
+                      ^
+../main.cpp:149:22: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+      for(int e = 0; e<va1.size(); e++){
+                      ^
+../main.cpp:154:22: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+      for(int e = 0; e<va1.size(); e++){
+                      ^
+../main.cpp: En la función miembro ‘bool Patricia::Find(std::string&, NodoPatricia*&, std::string&)’:
+../main.cpp:170:11: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+      if(i >= dato.size() - 1){
+           ^
+../main.cpp: En la función miembro ‘bool Patricia::Find(std::string&, NodoPatricia*&, bool&, int&)’:
+../main.cpp:202:57: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+     while( q->p_dato[i] && q->p_dato[i] == dato[i] && i < dato.size()){
+                                                         ^
+../main.cpp: En la función miembro ‘void Pagina::printDot(std::ofstream&)’:
+../main.cpp:291:18: aviso: variable ‘p’ sin usar [-Wunused-variable]
+   NodoPatricia * p;
+                  ^
+../main.cpp: En la función miembro ‘void Digital::Add(char*)’:
+../main.cpp:323:11: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+   for(; i < strlen(dato);i++){
+           ^
+../main.cpp:329:9: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+    if(i == strlen(dato)-1){
+         ^
+../main.cpp: En la función miembro ‘std::vector<std::basic_string<char> > Digital::Find(char*)’:
+../main.cpp:341:20: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+   for(int i = 0; i < strlen(dato);i++){
+                    ^
+../main.cpp: En la función miembro ‘std::vector<std::basic_string<char> > Digital::List(Pagina*)’:
+../main.cpp:369:21: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+     for(int e = 0; e<va1.size(); e++){
+                     ^
+../main.cpp: En la función miembro ‘bool Digital::Find(char*, Pagina*&, int&)’:
+../main.cpp:396:11: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+   for(; i < strlen(dato);i++){
+           ^
+../main.cpp: En la función ‘int main()’:
+../main.cpp:436:22: error: conversión inválida de ‘char’ a ‘char*’ [-fpermissive]
+        dig.Add(buffer);
+                      ^
+../main.cpp:314:7: nota:   argumento de inicialización 1 de ‘void Digital::Add(char*)’
+  void Add(char dato[]){
+       ^
+../main.cpp:439:33: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+       dig.printDot("archivo.dot");
+                                 ^
+../main.cpp:441:41: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+       vector<string>  v = dig.Find("zap");
+                                         ^
+../main.cpp:456:21: aviso: comparación entre expresiones enteras signed y unsigned [-Wsign-compare]
+  for (int i = 0 ; i < v.size(); i++){
+                     ^
+subdir.mk:18: fallo en las instrucciones para el objetivo 'main.o'
+make: *** [main.o] Error 1
 
-21:11:30 Build Finished (took 74ms)
+12:03:13 Build Finished (took 319ms)
 
