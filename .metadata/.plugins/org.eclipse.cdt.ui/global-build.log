@@ -1,835 +1,334 @@
-21:02:18 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-../Puzzle.cpp: En la función miembro ‘int Puzzle::Similitud(int*)’:
-../Puzzle.cpp:105:1: aviso: no hay una declaración de devolución en la función que no devuelve void [-Wreturn-type]
- }
- ^
-Finished building: ../Puzzle.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:02:52 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:03:08 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:03:21 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:28:14 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:28:36 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:28:54 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:29:14 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:30:55 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:31:04 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:31:50 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:36:14 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:38:59 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-../Puzzle.cpp: En la función miembro ‘void Puzzle::ResolverPuzzle()’:
-../Puzzle.cpp:91:38: error: expected ‘;’ before ‘]’ token
-    p3[posActual] = p3[posActual-size]];
-                                      ^
-../Puzzle.cpp:92:22: error: expected ‘;’ before ‘]’ token
-    p3[posActual-size]] = 0;
-                      ^
-../Puzzle.cpp:92:21: aviso: no se usa el valor calculado [-Wunused-value]
-    p3[posActual-size]] = 0;
-                     ^
-../Puzzle.cpp:92:21: aviso: la declaración no tiene efecto [-Wunused-value]
-subdir.mk:21: fallo en las instrucciones para el objetivo 'Puzzle.o'
-make: *** [Puzzle.o] Error 1
-21:39:09 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:39:39 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:39:51 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:40:06 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:40:45 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:41:16 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:41:53 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:42:52 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:43:17 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:44:17 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:45:23 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:46:17 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:47:18 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:48:10 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:49:48 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:50:03 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:50:54 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-21:51:33 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-21:54:24 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:43:38 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-11:54:06 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:54:28 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:54:57 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-11:57:38 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:57:55 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:58:18 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:58:45 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:59:03 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:59:07 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-11:59:30 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-11:59:55 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:00:35 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:01:33 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-12:04:07 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:04:36 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:08:13 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-../Puzzle.cpp: En la función miembro ‘void Puzzle::ResolverPuzzle()’:
-../Puzzle.cpp:112:33: error: tipos inválidos ‘int[int]’ para índice de matriz
-    p2[posActual] = 2[posActual-1];
-                                 ^
-../Puzzle.cpp:150:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
-   case size - 1:
-        ^
-../Puzzle.cpp:158:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
-   case size:
-        ^
-subdir.mk:21: fallo en las instrucciones para el objetivo 'Puzzle.o'
-make: *** [Puzzle.o] Error 1
-12:08:26 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-../Puzzle.cpp: En la función miembro ‘void Puzzle::ResolverPuzzle()’:
-../Puzzle.cpp:150:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
-   case size - 1:
-        ^
-../Puzzle.cpp:158:8: error: ‘Puzzle::size’ no puede aparecer en una expresion constante
-   case size:
-        ^
-make: *** [Puzzle.o] Error 1
-subdir.mk:21: fallo en las instrucciones para el objetivo 'Puzzle.o'
-12:08:41 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:08:58 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-12:09:13 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:49:24 **** Incremental Build of configuration Debug for project BTree ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:09:50 **** Incremental Build of configuration Debug for project PuzzleGame ****
+../main.cpp: En la función miembro ‘void BTreeNode::insertar(int&, BTreeNode*&)’:
+../main.cpp:193:41: error: tipos inválidos ‘int*[double]’ para índice de matriz
+     z->keys[j] = keys[(j+round(t / 2)+1)];
+                                         ^
+../main.cpp: En la función ‘int main()’:
+../main.cpp:323:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+subdir.mk:18: fallo en las instrucciones para el objetivo 'main.o'
+make: *** [main.o] Error 1
+19:49:41 **** Incremental Build of configuration Debug for project BTree ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:323:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
 Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:10:12 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:10:50 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:11:19 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:11:34 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:13:35 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:13:50 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:50:20 **** Incremental Build of configuration Debug for project BTree ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:14:23 **** Incremental Build of configuration Debug for project PuzzleGame ****
+../main.cpp: En la función miembro ‘void BTreeNode::insertar(int&, BTreeNode*&)’:
+../main.cpp:196:28: error: tipos inválidos ‘int*[double]’ para índice de matriz
+       k = keys[round(t / 2)];
+                            ^
+../main.cpp: En la función ‘int main()’:
+../main.cpp:323:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+subdir.mk:18: fallo en las instrucciones para el objetivo 'main.o'
+make: *** [main.o] Error 1
+19:50:34 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:15:43 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-12:16:10 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-make: No se hace nada para 'all'.
-12:17:05 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
-Building target: PuzzleGame
-Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
- 
-12:18:29 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
- 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:323:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
 Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:19:38 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:51:27 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:323:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:20:15 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:52:19 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:325:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:20:30 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:52:39 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-make: No se hace nada para 'all'.
-12:22:27 **** Incremental Build of configuration Debug for project PuzzleGame ****
-make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:325:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:23:03 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:53:14 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:325:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:24:27 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:53:35 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:24:57 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:54:01 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:26:22 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:54:32 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:27:25 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:54:46 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:29:05 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:55:54 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:29:28 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:56:26 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:32:05 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:56:36 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:32:22 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:57:03 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:32:36 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:57:26 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  
-12:33:25 **** Incremental Build of configuration Debug for project PuzzleGame ****
+19:57:37 **** Incremental Build of configuration Debug for project BTree ****
 make all 
-Building file: ../Puzzle.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Puzzle.d" -MT"Puzzle.o" -o "Puzzle.o" "../Puzzle.cpp"
-Finished building: ../Puzzle.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
  
-Building target: PuzzleGame
+Building target: BTree
 Invoking: GCC C++ Linker
-g++  -o "PuzzleGame"  ./Puzzle.o ./main.o   
-Finished building target: PuzzleGame
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
+ 
+19:59:15 **** Incremental Build of configuration Debug for project BTree ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
+ 
+Building target: BTree
+Invoking: GCC C++ Linker
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
+ 
+19:59:40 **** Incremental Build of configuration Debug for project BTree ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
+ 
+Building target: BTree
+Invoking: GCC C++ Linker
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
+ 
+20:00:09 **** Incremental Build of configuration Debug for project BTree ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:326:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+Finished building: ../main.cpp
+ 
+Building target: BTree
+Invoking: GCC C++ Linker
+g++  -o "BTree"  ./main.o   
+Finished building target: BTree
  

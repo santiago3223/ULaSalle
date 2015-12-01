@@ -8,6 +8,8 @@
 #include <fstream>
 #include<iostream>
 #include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 using namespace std;
 
 // A BTree node
@@ -22,6 +24,8 @@ public:
     BTreeNode(int _t, bool _leaf);
 
     void insertNonFull(int k);
+
+    void insertar(int & k, BTreeNode * & p);
 
     void splitChild(int i, BTreeNode *y);
 
@@ -49,6 +53,7 @@ public:
     }
 
     void insert(int k);
+    void insertar(int k);
     void printDot(char* p);
 };
 
@@ -132,8 +137,8 @@ void BTree::insert(int k)
     }
     else
     {
-    	BTreeNode * q = 0;
-    	BTreeNode * nn = root->search(k, q);
+    	//BTreeNode * q = 0;
+    	//BTreeNode * nn = root->search(k, q);
         if (root->n ==t && !root->hayEspacio(k))
         {
             BTreeNode *s = new BTreeNode(t, false);
@@ -153,6 +158,102 @@ void BTree::insert(int k)
             root->insertNonFull(k);
     }
 }
+void BTree::insertar(int k){
+	if (root == NULL)
+	{
+	        root = new BTreeNode(t, true);
+	        root->keys[0] = k;
+	        root->n = 1;
+	}else{
+		BTreeNode * p = 0;
+		root->insertar(k,p);
+		if(p){
+				BTreeNode *s = new BTreeNode(t, false);
+				s->C[0] = root;
+				s->C[1] = p;
+				s->n = 1;
+				cout<<s->C[1]<<endl;
+				s->keys[0] = k;
+				root = s;
+		}
+		//root->insertar(k);
+	}
+
+}
+
+void BTreeNode::insertar(int & k, BTreeNode * & p){
+    int i = n-1;
+    if (leaf == true)
+    {
+    	if(n == t){
+    		BTreeNode *z = new BTreeNode(t, leaf);
+			z->n = ((int)t / 2);
+			int j = 0;
+			for (j = 0; j < ((int )t / 2)-1; j++){
+				z->keys[j] = keys[(int)(j+round(t / (double)2)+1)];
+				//cout<<t<<endl;
+				//cout<<round(t / (double)2)<<endl;
+			}
+			z->keys[j] = k;
+			n = (int)round(t / (double)2);
+		    k = keys[(int)round(t / (double)2)];
+			p = z;
+    	}else{
+			while (i >= 0 && keys[i] > k)
+			{
+				keys[i+1] = keys[i];
+				i--;
+			}
+			keys[i+1] = k;
+			n = n+1;
+			p = 0;
+    	}
+    }
+    else
+    {
+        while (i >= 0 && keys[i] > k)
+            i--;
+
+        C[i+1]->insertar(k,p);
+
+        if(p){
+        	if(n == t){
+        		BTreeNode *z = new BTreeNode(t, leaf);
+    			z->n = ((int)t / 2);
+    			int j = 0;
+    			for (j = 0; j < ((int )t / 2)-1; j++)
+    				z->keys[j] = keys[(int)(j+round(t / (double)2)+1)];
+
+    			z->keys[j] = k;
+    			cout<<j<<": "<<k<<endl;
+    			cout<<z->n<<endl;
+    			for (j = 0; j < ((int )t / 2); j++)
+					z->C[j] = C[(int)(j+round(t / (double)2)+1)];
+
+				z->C[j] = p;
+    			n = (int)round(t / (double)2);
+    		    k = keys[(int)round(t / (double)2)];
+    			p = z;
+
+			}else{
+				while (i >= 0 && keys[i] > k)
+				{
+					keys[i+1] = keys[i];
+					i--;
+				}
+				keys[i+1] = k;
+				int j = 0;
+				for (j = n; j > i+1; j--)
+					C[j+1] = C[j];
+
+				C[j+1] = p;
+				n = n+1;
+				p = 0;
+			}
+        }
+    }
+}
+
 
 void BTreeNode::insertNonFull(int k)
 {
@@ -173,8 +274,8 @@ void BTreeNode::insertNonFull(int k)
         while (i >= 0 && keys[i] > k)
             i--;
 
-        BTreeNode * q = 0;
-        BTreeNode * nn = search(k, q);
+       // BTreeNode * q = 0;
+       // BTreeNode * nn = search(k, q);
         if (C[i+1]->n == t && ! C[i+1]->hayEspacio(k))
         {
             splitChild(i+1, C[i+1]);
@@ -218,8 +319,8 @@ void BTreeNode::splitChild(int i, BTreeNode *y)
 int main()
 {
     BTree t(4);
-    for(int i =1 ;i <= 60; i++){
-    	t.insert(i);
+    for(int i =1 ;i <= 50; i++){
+    	t.insertar(i);
     }
 
     t.printDot("archivo.dot");
