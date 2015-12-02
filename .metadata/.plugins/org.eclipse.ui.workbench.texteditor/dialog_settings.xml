@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="0x16c6fa0" key="selection"/>
+		<item value="BTreeNode&lt;T&gt; " key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="BTreeNode "/>
 			<item value="0x16c6fa0"/>
 			<item value="0x16c6ea0"/>
 			<item value="printDot"/>
@@ -15,9 +16,9 @@
 			<item value="3"/>
 			<item value="cpy"/>
 			<item value="MEm"/>
-			<item value="Find"/>
 		</list>
 		<list key="replacehistory">
+			<item value="BTreeNode&lt;T&gt; "/>
 			<item value="size - 1"/>
 			<item value="size"/>
 		</list>

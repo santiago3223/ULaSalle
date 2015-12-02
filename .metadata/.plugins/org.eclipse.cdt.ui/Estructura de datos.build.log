@@ -1,4 +1,4 @@
-12:03:13 **** Incremental Build of configuration Debug for project Estructura de datos ****
+11:21:59 **** Incremental Build of configuration Debug for project Estructura de datos ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
@@ -79,5 +79,5 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "mai
 subdir.mk:18: fallo en las instrucciones para el objetivo 'main.o'
 make: *** [main.o] Error 1
 
-12:03:13 Build Finished (took 319ms)
+11:21:59 Build Finished (took 414ms)
 

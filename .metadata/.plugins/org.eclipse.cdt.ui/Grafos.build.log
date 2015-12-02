@@ -1,4 +1,4 @@
-17:40:01 **** Incremental Build of configuration Debug for project Grafos ****
+11:22:00 **** Incremental Build of configuration Debug for project Grafos ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
@@ -6,8 +6,8 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "mai
 ../main.cpp:361:11: error: expected initializer before ‘tia’
  int main()tia
            ^
-subdir.mk:18: fallo en las instrucciones para el objetivo 'main.o'
 make: *** [main.o] Error 1
+subdir.mk:18: fallo en las instrucciones para el objetivo 'main.o'
 
-17:40:01 Build Finished (took 286ms)
+11:22:00 Build Finished (took 413ms)
 
