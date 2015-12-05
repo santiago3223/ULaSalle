@@ -1,0 +1,43 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 17 de nov. de 2015
+ *      Author: santiago
+ */
+
+#include <fstream>
+#include<iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include "BTreeNode.h"
+#include "BTree.h"
+using namespace std;
+
+int main()
+{
+    BTree<int> t(4);
+    ifstream in("BrazilianCities500.txt");
+    char cityName[200];
+    int cont;
+    double dLat, dLong;
+
+    while(in.getline(cityName, 200, '\t')){
+             in >> dLat;
+             in >> dLong;
+             in.ignore();
+             t.insertar(, cont++)
+             cont++;
+    }
+
+
+
+    //cout<<"pos"<<t.find(5)<<endl;
+    //cout<<"pos"<<t.find(40)<<endl;
+    t.printDot("archivo.dot");
+	system("dot -Tpng archivo.dot -o archivo.png");
+    cout<<"fin"<<endl;
+
+    return 0;
+}
+

@@ -1,0 +1,6 @@
+00:55:27 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+
+00:55:27 Build Finished (took 63ms)
+

@@ -1,35 +1,1687 @@
-11:22:30 **** Incremental Build of configuration Debug for project BTree ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-../main.cpp: En la función ‘int main()’:
-../main.cpp:162:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
-     t.printDot("archivo.dot");
-                             ^
-Finished building: ../main.cpp
- 
-Building target: BTree
-Invoking: GCC C++ Linker
-g++  -o "BTree"  ./main.o   
-Finished building target: BTree
- 
-11:22:46 **** Incremental Build of configuration Debug for project BTree ****
+23:41:15 **** Incremental Build of configuration Debug for project BTreeIndex ****
 make all 
 make: No se hace nada para 'all'.
-11:23:44 **** Incremental Build of configuration Debug for project BTree ****
+23:41:23 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:41:37 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:41:55 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:42:15 **** Incremental Build of configuration Debug for project BTreeIndex ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 ../main.cpp: En la función ‘int main()’:
-../main.cpp:24:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+../main.cpp:26:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
      t.printDot("archivo.dot");
                              ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:21:22:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:26:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:21:22:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:21:22:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:26:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
 Finished building: ../main.cpp
  
-Building target: BTree
+Building target: BTreeIndex
 Invoking: GCC C++ Linker
-g++  -o "BTree"  ./main.o   
-Finished building target: BTree
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
  
+23:42:29 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:26:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:21:22:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:26:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:21:22:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:21:22:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:26:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+23:42:47 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:26:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:21:22:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:26:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:21:22:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:21:22:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:26:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+23:51:34 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:38:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:38:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:38:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+23:51:49 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:52:54 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:53:54 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:55:00 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:55:10 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:55:30 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:56:56 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+23:58:06 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:38:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:38:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:38:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+23:58:37 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:38:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:38:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:38:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+23:59:13 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:38:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:38:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:38:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:00:11 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:00:45 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:38:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:38:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../BTree.h:31:13:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:30:34:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:38:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:07:34 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:42:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:37:21:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:42:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:42:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:08:16 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:10:24 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:13:38 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:92:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:97:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:102:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:99:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:13:56 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:14:03 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:14:16 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:14:30 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:17:04 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:67:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:68:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:79:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:91:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:115:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:116:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:133:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:154:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:17:12 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:17:48 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:18:10 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:27:51 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:77:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:78:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:89:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:101:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:126:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:127:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:144:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:165:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:30:06 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:30:40 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:31:00 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:33:12 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:77:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:78:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:89:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:101:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:126:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:127:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:144:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:165:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:33:53 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:78:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:79:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:90:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:102:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:127:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:128:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:145:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:165:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:34:13 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:78:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:79:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:90:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:102:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:127:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:128:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:145:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:165:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:34:34 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:34:52 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:35:25 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:35:45 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:78:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:79:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:90:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:102:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:127:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:128:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:145:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:165:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:36:20 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:38:13 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:78:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:80:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:91:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:103:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:128:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:129:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:146:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:166:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:38:39 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:39:25 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:40:30 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:44:16 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:80:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:82:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:93:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:105:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:130:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:131:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:148:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:168:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:46:25 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:51:23 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:86:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:88:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:99:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:111:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:136:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:137:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:154:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:174:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:51:38 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:53:43 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘void BTree<T>::insertar(T, int) [with T = int]’:
+../main.cpp:31:34:   se requiere desde aquí
+../BTree.h:38:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+               root.serialize("data.bin",4);
+               ^
+../BTree.h:43:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        root.deserialize("data.bin",raiz);
+        ^
+../BTree.h:52:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+          raiz = s->serialize("data.bin");
+               ^
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::insertar(T&, int&, int&) [with T = int]’:
+../BTree.h:44:8:   se requiere desde ‘void BTree<T>::insertar(T, int) [with T = int]’
+../main.cpp:31:34:   se requiere desde aquí
+../BTreeNode.h:86:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:88:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     pe = z->serialize("data.bin");
+        ^
+../BTreeNode.h:99:14: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     serialize("data.bin",pe);
+              ^
+../BTreeNode.h:111:4: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+    temporal.deserialize("data.bin",pe);
+    ^
+../BTreeNode.h:136:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h:137:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      pe = z->serialize("data.bin");
+         ^
+../BTreeNode.h:154:15: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      serialize("data.bin",ptemp);
+               ^
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:174:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:53:50 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:54:07 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:54:13 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.
+00:55:20 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: En la función ‘int main()’:
+../main.cpp:41:29: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+     t.printDot("archivo.dot");
+                             ^
+In file included from ../main.cpp:14:0:
+../BTree.h: En la instanciación de ‘int BTree<T>::find(T) [with T = int]’:
+../main.cpp:36:21:   se requiere desde aquí
+../BTree.h:94:6: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+      bt.deserialize("data.bin",raiz);
+      ^
+../BTree.h:99:8: aviso: variable ‘x’ sin usar [-Wunused-variable]
+    int x = bt.keys[i];
+        ^
+../BTree.h:104:3: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+   bt.deserialize("data.bin", bt.c[i]);
+   ^
+../BTree.h:101:7: aviso: variable ‘x’ sin usar [-Wunused-variable]
+   int x = bt.keys[i];
+       ^
+../BTree.h: En la instanciación de ‘void BTree<T>::printDot(char*) [with T = int]’:
+../main.cpp:41:29:   se requiere desde aquí
+../BTree.h:66:8: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+        nodo.deserialize("data.bin", raiz);
+        ^
+In file included from ../main.cpp:13:0:
+../BTreeNode.h: En la instanciación de ‘void BTreeNode<T>::printDot(std::ofstream&, int) [with T = int; std::ofstream = std::basic_ofstream<char>]’:
+../BTree.h:67:8:   se requiere desde ‘void BTree<T>::printDot(char*) [with T = int]’
+../main.cpp:41:29:   se requiere desde aquí
+../BTreeNode.h:174:9: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+         temporal.deserialize("data.bin", c[i]);
+         ^
+Finished building: ../main.cpp
+ 
+Building target: BTreeIndex
+Invoking: GCC C++ Linker
+g++  -o "BTreeIndex"  ./main.o   
+Finished building target: BTreeIndex
+ 
+00:55:27 **** Incremental Build of configuration Debug for project BTreeIndex ****
+make all 
+make: No se hace nada para 'all'.

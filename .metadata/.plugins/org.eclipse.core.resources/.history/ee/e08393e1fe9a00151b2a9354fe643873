@@ -1,0 +1,107 @@
+/*
+ * BTree.h
+ *
+ *  Created on: 2 de dic. de 2015
+ *      Author: santiago
+ */
+
+#ifndef BTREE_H_
+#define BTREE_H_
+#include <fstream>
+#include<iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include "BTreeNode.h"
+using namespace std;
+
+template<class T>
+class BTree
+{
+    BTreeNode<T> *root;
+    int raiz;
+    int t;
+public:
+    BTree(int _t)
+    {
+    	root = NULL;
+    	t = _t;
+    	raiz = loadRootPos();
+    }
+
+    void insertar(T k, int ps){
+    	if(find(k)!=-1)return;
+    	if (raiz == 0)
+    		{
+    		        root = new BTreeNode<T>(t, true);
+    		        root->keys[0] = k;
+    		        root->pos[0] = ps;
+    		        root->n = 1;
+    		        root->serialize("data.bin",raiz);
+    		        writeRoot(4);
+    		}else{
+    			int pe = raiz;
+    			root->insertar(k,ps,pe);
+    			if(pe){
+    					BTreeNode<T> *s = new BTreeNode<T>(t, false);
+    					s->C[0] = root;
+    					s->c[0] = raiz;
+    					s->c[1] = pe;
+    					s->n = 1;
+    					cout<<s->C[1]<<endl;
+    					s->keys[0] = k;
+    					s->pos[0] = ps;
+    					root = s;
+    					raiz = s->serialize("data.bin");
+    					writeRoot(raiz);
+    					cout<<"raiz"<<raiz<<endl;
+    			}
+    			//root->insertar(k);
+    		}
+    }
+    void printDot(char* p){
+    	//root->serialize("data.bin", 0);
+    	//root->deserialize("data.bin",raiz);
+    	ofstream file(p);
+    			file<<"digraph {"<<endl;
+    			root->printDot(file, raiz);
+    			file<<" }"<<endl;
+    }
+
+    void writeRoot(int pos){
+    	ofstream outfile ("data.bin",ios::in| ifstream::binary);
+		outfile.write ((char *)&pos ,sizeof(int));
+		outfile.close();
+    }
+
+    int loadRootPos(){
+		 std::ifstream infile ("data.bin"  ,ifstream::binary);
+		 infile.seekg(0, infile.beg);
+		 char* buf = new char[1];
+		 infile.read (buf,sizeof(int));
+		 int nn = *((int *)buf);
+		 cout<<nn<<endl;
+		 return nn;
+    }
+
+    int find(T p){
+    	BTreeNode<T> bt(t,true);
+    	if(!raiz)return -1;
+    	bt.deserialize("data.bin",raiz);
+    	while(true){
+    	int i = 0;
+		while(p>bt.keys[i] && i < t){
+			i++;
+		}
+		if(p == bt.keys[i])return bt.pos[i];
+		if(bt.c[i]){
+		bt.deserialize("data.bin", bt.c[i]);
+		}else {return -1;}
+    	}
+    }
+
+};
+
+
+
+#endif /* BTREE_H_ */
