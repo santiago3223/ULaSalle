@@ -201,23 +201,34 @@ public:
 
 
     void deserialize(char * ruta, int pos){
-    	  std::ifstream infile (ruta ,ios::in|ifstream::binary);
+    	  std::ifstream infile (ruta ,ios::in |ifstream::binary);
     	  infile.seekg(pos);
     	  char* buffer = new char[t];
+    	  char* buffer1 = new char[t];
+    	  char* buffer2 = new char[t+1];
+    	  char* buf = new char[t];
+    	  char* buff = new char[t];
     	  infile.read (buffer,sizeof(T)*t);
     	  keys = (int *)buffer;
-    	  char* buffer1 = new char[t];
+    	  for(int i = 0; i< t; i++){
+				  cout<<i<<":"<<keys[i]<<endl;
+			  }
+
     	  infile.read (buffer1,sizeof(T)*t);
     	  this->pos = (int *)buffer1;
-    	  char* buffer2 = new char[t+1];
+    	  for(int i = 0; i< t; i++){
+    	  				  cout<<i<<":"<<this->pos[i]<<endl;
+    	  			  }
+
     	  infile.read (buffer2,sizeof(T)*(t+1));
     	  c = (int *)buffer2;
-    	  char* buffer3 = new char[1];
-    	  infile.read (buffer3,sizeof(int));
-    	  n =  *((int *)buffer3);
-    	  char* buffer4 = new char[1];
-    	  infile.read (buffer4,sizeof(bool));
-		  leaf = buffer4[0];
+    	  for(int i = 0; i< t+1; i++){
+    	  				  cout<<i<<":"<<c[i]<<endl;
+    	  			  }
+    	  infile.read (buf,sizeof(int));
+    	  n =  *((int *)buf);
+    	  infile.read (buff,sizeof(bool));
+		  leaf = buff[0];
     	  infile.close();
     }
 

@@ -28,7 +28,8 @@ public:
     }
 
     void insertar(T k, int ps){
-    	if(find(k)!=-1 )return;
+    	raiz = loadRootPos();
+    	//if(find(k)!=-1 )return;
     	if (raiz == 0)
     		{
     			 	BTreeNode<T> root(t, true);

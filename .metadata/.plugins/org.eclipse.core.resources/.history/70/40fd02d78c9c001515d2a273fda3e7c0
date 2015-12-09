@@ -1,0 +1,113 @@
+/*
+ * BTree.h
+ *
+ *  Created on: 2 de dic. de 2015
+ *      Author: santiago
+ */
+
+#ifndef BTREE_H_
+#define BTREE_H_
+#include <fstream>
+#include<iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include "BTreeNode.h"
+using namespace std;
+
+template<class T>
+class BTree
+{
+    int raiz;
+    int t;
+public:
+    BTree(int _t)
+    {
+    	t = _t;
+    	raiz = 0;
+    }
+
+    void insertar(T k, int ps){
+    	//if(find(k)!=-1 )return;
+    	if (raiz == 0)
+    		{
+    			 	BTreeNode<T> root(t, true);
+    		        root.keys[0] = k;
+    		        root.pos[0] = ps;
+    		        root.n = 1;
+    		        root.serialize("data.bin",4);
+    		        writeRoot(4);
+    		}else{
+    			int pe = raiz;
+    			BTreeNode<T> root(t,true);
+    			root.deserialize("data.bin",raiz);
+    			root.insertar(k,ps,pe);
+    			if(pe){
+    					BTreeNode<T> *s = new BTreeNode<T>(t, false);
+    					s->c[0] = raiz;
+    					s->c[1] = pe;
+    					s->n = 1;
+    					s->keys[0] = k;
+    					s->pos[0] = ps;
+    					raiz = s->serialize("data.bin");
+    					writeRoot(raiz);
+    					cout<<"raiz"<<raiz<<endl;
+    			}
+    			//root->insertar(k);
+    		}
+    }
+    void printDot(char* p){
+    	//root->serialize("data.bin", 0);
+    	//root->deserialize("data.bin",raiz);
+    	ofstream file(p);
+    	raiz = loadRootPos();
+    			file<<"digraph {"<<endl;
+    			BTreeNode<T> nodo(t,true);
+    			nodo.deserialize("data.bin", raiz);
+    			nodo.printDot(file, raiz);
+    			file<<" }"<<endl;
+    }
+
+    void writeRoot(int pos){
+    	ofstream outfile ("data.bin",ios::in| ifstream::binary);
+		outfile.write ((char *)&pos ,sizeof(int));
+		outfile.close();
+    }
+
+    int loadRootPos(){
+		 std::ifstream infile ("data.bin"  ,ios::in|ifstream::binary);
+		 infile.seekg(0, infile.end);
+		 if(infile.tellg() == 0)return 0;
+		 infile.seekg(0, infile.beg);
+		 char* buf = new char[1];
+		 infile.read (buf,sizeof(int));
+		 int nn = *((int *)buf);
+		 cout<<nn<<endl;
+		 infile.close();
+		 return nn;
+    }
+
+    int find(T p){
+    	raiz = loadRootPos();
+    	BTreeNode<T> bt(t,true);
+    	if(!raiz)return -1;
+    	bt.deserialize("data.bin",raiz);
+    	while(true){
+    	int i = 0;
+		while(p>bt.keys[i] && i < bt.n){
+			i++;
+			int x = bt.keys[i];
+		}
+		int x = bt.keys[i];
+		if(p == bt.keys[i])return bt.pos[i];
+		if(bt.c[i]){
+		bt.deserialize("data.bin", bt.c[i]);
+		}else {return -1;}
+    	}
+    }
+
+};
+
+
+
+#endif /* BTREE_H_ */

@@ -16,7 +16,7 @@ using namespace std;
 
 int main()
 {
-    BTree<int> t(5);
+    BTree<int> t(30);
     for(int i =1 ;i <= 200; i++){
     	t.insertar(i);
     }

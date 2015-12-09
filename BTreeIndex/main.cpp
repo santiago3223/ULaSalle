@@ -16,25 +16,13 @@ using namespace std;
 
 int main()
 {
-    BTree<int> t(4);
-    ifstream in("BrazilianCities500.txt");
-    /* Descomentar para probar el funcionamiento agregando mas ciudades
-    char cityName[200];
-    int cont;
-    double dLat, dLong;
-    int cod;
-    while(in.getline(cityName, 200, '\t')){
-             in >> dLat;
-             in >> dLong;
-             in >> cod;
-             in.ignore();
-             t.insertar(cod, cont);
-             cont++;
+    BTree<int> t(7);
+    for(int i = 0 ; i<= 20; i++){
+    	t.insertar(i, i+1);
     }
-    in.close();
-     */
-    int k = t.find(9);
-    cout<<"buscando clave nueve, retorna"<<"linea: "<<k<<endl;
+
+    //int k = t.find(9);
+    //cout<<"buscando clave nueve, retorna"<<"linea: "<<k<<endl;
 
     //cout<<"pos"<<t.find(5)<<endl;
     //cout<<"pos"<<t.find(40)<<endl;
